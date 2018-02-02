@@ -66,9 +66,8 @@ class Players {
   }
 
   show() {
-    console.log(`Player Details
+    console.log(`${this.category} Details
       Name : ${this.name}
-      Category : ${this.category}
       Position : ${this.position}
       Nationality : ${this.nationality}
       Height : ${this.height}
