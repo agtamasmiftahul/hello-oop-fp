@@ -1,6 +1,7 @@
 class Players {
-  constructor(name,position,nationality,height,weight,club){
+  constructor(name, category, position, nationality, height, weight, club) {
     this.name = name;
+    this.category = category;
     this.position = position;
     this.nationality = nationality;
     this.height = height;
@@ -10,6 +11,10 @@ class Players {
 
   getName() {
     return this.name;
+  }
+
+  getCategory() {
+    return this.category;
   }
 
   getPosition() {
@@ -36,6 +41,10 @@ class Players {
     this.name = name;
   }
 
+  setCategory(category) {
+    this.category = category;
+  }
+
   setPosition(position) {
     this.position = position;
   }
@@ -54,6 +63,17 @@ class Players {
 
   setClub(club) {
     this.club = club;
+  }
+
+  show() {
+    console.log(`Player Details
+      Name : ${this.name}
+      Category : ${this.category}
+      Position : ${this.position}
+      Nationality : ${this.nationality}
+      Height : ${this.height}
+      Weight : ${this.weight}
+      Club : ${this.club}`);
   }
 }
 
