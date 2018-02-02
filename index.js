@@ -9,7 +9,9 @@ messi.setNationality(`Argentina`);
 messi.setHeight(`169`);
 messi.setWeight(`70`);
 messi.setClub(`F.C. Barcelona`);
+messi.setAchievements([`2009 Fifa Best Player`, `2010 Fifa Best Player`, `2011 Fifa Best Player`]);
 messi.show();
+messi.listAchievements();
 
 const dendi = new EsportsPlayers();
 dendi.setName(`Danil Ishutin`);
